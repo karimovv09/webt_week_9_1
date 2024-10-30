@@ -1,4 +1,4 @@
-// Task 1: Calculate Average Marks and Assign Grade for All Students
+
 const students = [
     { name: "David", mark: 80 },
     { name: "Vinoth", mark: 77 },
@@ -9,11 +9,10 @@ const students = [
 
 function displayGrades() {
     const tableBody = document.querySelector("#marksTable tbody");
-    tableBody.innerHTML = '';  // Clear previous data
+    tableBody.innerHTML = '';  
 
     let totalMarks = 0;
 
-    // Populate table rows with student data
     students.forEach(student => {
         const row = document.createElement("tr");
         const nameCell = document.createElement("td");
@@ -28,11 +27,9 @@ function displayGrades() {
         totalMarks += student.mark;
     });
 
-    // Calculate average
     const averageMark = totalMarks / students.length;
     document.getElementById("averageMark").innerText = averageMark.toFixed(2);
 
-    // Determine grade based on average
     let grade;
     if (averageMark >= 90) grade = 'A';
     else if (averageMark >= 80) grade = 'B';
@@ -43,7 +40,6 @@ function displayGrades() {
     document.getElementById("finalGrade").innerText = grade;
 }
 
-// Remaining tasks (2-5) are unchanged
 document.getElementById("inputBox").addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         document.getElementById("enterResult").innerText = "Enter key pressed!";
