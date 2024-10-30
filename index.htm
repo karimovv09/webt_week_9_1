@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+    <h1>JavaScript Practice Tasks</h1>
+
+    <!-- Task 1: Calculate Average and Grade -->
+    <section>
+        <h2>Student Marks and Grades</h2>
+        <button onclick="displayGrades()">Display Grades</button>
+        <table id="marksTable" border="1" style="width: 50%; margin-top: 10px; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Mark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student rows will be populated here by JavaScript -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Average</td>
+                    <td id="averageMark"></td>
+                </tr>
+                <tr>
+                    <td>Grade</td>
+                    <td id="finalGrade"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Task 2: Detect Enter Key in Text Input -->
+    <section>
+        <h2>Press Enter to Trigger Action</h2>
+        <input type="text" id="inputBox" placeholder="Type here">
+        <div id="enterResult"></div>
+    </section>
+
+    <!-- Task 3: Double-Click Event Listener -->
+    <section>
+        <h2>Double Click Event</h2>
+        <button id="dblClickButton">Double Click Me</button>
+        <div id="dblClickResult"></div>
+    </section>
+
+    <!-- Task 4: Progress Bar -->
+    <section>
+        <h2>Task Progress Bar</h2>
+        <div id="progressContainer" style="width: 100%; background: #ddd;">
+            <div id="progressBar" style="width: 0%; height: 30px; background: #4caf50;"></div>
+        </div>
+        <button onclick="updateProgress()">Complete Task</button>
+    </section>
+
+    <!-- Task 5: FizzBuzz -->
+    <section>
+        <h2>FizzBuzz Program</h2>
+        <button onclick="runFizzBuzz()">Run FizzBuzz</button>
+        <div id="fizzBuzzResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
